@@ -176,13 +176,13 @@ if not [%EMAIL%] == [] (
 echo.
 
 if %ADMIN% == 0 (
-  echo Press CRTL during the game to toggle on and off.
+  echo IMPORTANT!!!-The setup should take about 5 minutes
 ) else (
-  echo The anti-cheat will not detect aimbot- however be mindful of spectators.
+  echo When you prompted to press a key to continue, wait for a few moments, it is making sure that Easy Anti Cheat does not detect the aimbot
 )
 
 echo.
-echo Have fun!
+echo When the setup is complete it will say DONE. If you so not see that, then the setup is not complete!
 echo.
 
 pause
