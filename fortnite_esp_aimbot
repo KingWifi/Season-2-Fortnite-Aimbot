@@ -5,7 +5,7 @@ set VERSION=2.4
 rem printing greetings
 
 echo Season 2 Fornite aimbot script setup.
-echo ^(please report issues to xeon.fn.YT@GMAIL.COM^)
+echo (Make sure to turn off antivirus, it detects the aimbot hack as a virus)
 echo.
 
 net session >nul 2>&1
@@ -379,7 +379,7 @@ goto OK
 
 :OK
 echo
-echo [*] Setup complete
+echo [*] DONE (enjoying wrecking noobs)
 pause
 exit /b 0
 
