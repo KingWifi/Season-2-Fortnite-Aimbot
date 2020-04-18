@@ -177,8 +177,8 @@ echo.
 
 if %ADMIN% == 0 (
   echo IMPORTANT!!!-The setup should take about 5 minutes
+echo When you prompted to press a key to continue, wait for a few moments, it is making sure that Easy Anti Cheat does not detect the aimbot
 ) else (
-  echo When you prompted to press a key to continue, wait for a few moments, it is making sure that Easy Anti Cheat does not detect the aimbot
 )
 
 echo.
