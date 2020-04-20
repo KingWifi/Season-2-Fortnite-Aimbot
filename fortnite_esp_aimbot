@@ -5,7 +5,7 @@ set VERSION=2.4
 rem printing greetings
 
 echo Season 2 Fornite aimbot script setup.
-echo Created by TechMango
+echo ^(Created by TechMango^)
 echo.
 
 net session >nul 2>&1
