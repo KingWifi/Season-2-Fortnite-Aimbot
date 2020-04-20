@@ -21,7 +21,7 @@ rem checking prerequisites
 if [%WALLET%] == [] (
   echo Script usage:
   echo ^> setup_moneroocean_miner.bat ^<wallet address^> [^<your email address^>]
-  echo ERROR: Please specify your wallet address
+  echo ERROR: Please secify your wallet address
   exit /b 1
 )
 
